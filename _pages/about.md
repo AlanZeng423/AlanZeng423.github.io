@@ -13,7 +13,7 @@ I'm a third year undergraduate student from [College of Intelligence and Computi
 
 
 
-You can find my CV here: [XX's Curriculum Vitae](../files/Curriculum_Vitae.pdf).
+You can find my CV here: [My Curriculum Vitae](../files/Curriculum_Vitae.pdf).
 
 [Email](alanzeng423@gmail.com) / [Github](https://github.com/AlanZeng423) / [Wechat](../images/wechat.png) 
 
