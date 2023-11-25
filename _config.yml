@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "AlanZeng/PersonalHomePage"
+title                    : "AlanZeng/AboutMe"
 title_separator          : "-"
 name                     : &name "Alan Zeng"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Alan Zeng (曾俊豪)"
   avatar           : "avatar.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Student of Tianjin University"
   location         : "Tianjin"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
