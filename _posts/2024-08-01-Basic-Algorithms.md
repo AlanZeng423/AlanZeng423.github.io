@@ -1,14 +1,10 @@
 ---
 layout: post
-title: 算法基础
+title: Basic Algorithms
 description: Basic Algorithm Problem Solving Record (Include ACWing Course Notes)
 date: 2024-08-01 11:12:30 -0800
 tags: CS-Learning
 ---
-
-
-
-
 
 ## Chapter1 基础算法
 
