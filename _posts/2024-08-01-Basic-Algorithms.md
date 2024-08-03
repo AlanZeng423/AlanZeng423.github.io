@@ -14,7 +14,7 @@ tags: CS-Learning
 
 #### 785.快速排序
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -66,7 +66,7 @@ quick_sort(q,i,r);**//此时x不能取q[l]**
 
 ### 归并排序
 
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 
@@ -110,7 +110,7 @@ int main()
 
 #### 整数二分
 
-```c++
+```cpp
 bool check(int x) {/* ... */} // 检查x是否满足某种性质
 
 // 区间[l, r]被划分成[l, mid]和[mid + 1, r]时使用：
@@ -187,7 +187,7 @@ int bsearch_2(int l, int r)
 
 **答案**
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -259,7 +259,7 @@ int main()
 
 答案：
 
-```c++
+```cpp
 #include <iostream>
 #include <algorithm>
 
@@ -294,7 +294,7 @@ int main()
 
 #### 高精度加法
 
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -340,7 +340,7 @@ int main()
 
 #### 高精度减法
 
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -407,7 +407,7 @@ int main()
 
 #### 高精度乘法
 
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -451,7 +451,7 @@ int main()
 
 #### 高精度除法
 
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -505,7 +505,7 @@ int main()
 - 更新 `S[i] = S[i-1] + a[i]`
 - 计算a[l,r] `ans = S[r] - S[l-1]`
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -539,7 +539,7 @@ int main()
 - 更新 `S[i][j] =a[i][j] + S[i][j-1] + S[i-1][j] - S[i-1][j-1]`
 - 计算(x1,y1)(x2,y2) `ans = S[x2][y2] - S[x1-1][y2] - S[x2][y1-1] + S[x1-1][y1-1]`
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -592,7 +592,7 @@ int main()
   - `b[l] += c;`
   - ``b[r+1] -= c;`
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -657,7 +657,7 @@ int main()
   - `b[x1][y2+1] -= c`
   - `b[x2+1][y2+1] += c`
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -717,7 +717,7 @@ int main()
 
 - 基本模版
 
-  ```c++
+  ```cpp
   for(i = 0,j = 0;i < n;i++){
   	while(j<i && check(i,j))
       j++;
@@ -749,7 +749,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -807,7 +807,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -847,7 +847,7 @@ int main()
 
 **n的二进制表示中的第k位是几？**
 
-```c++
+```cpp
 int n = 10;
 for(int k = 3;k >= 0;k--){
   cout << (n>>k & 1);
@@ -865,7 +865,7 @@ x                 = 1010........==1==000......0
 ~x + 1         = 0101........==1==000......0
 x & (~x + 1) = 0000........==1==000......0
 
-```c++
+```cpp
 int x;
 cout << (x & -x);
 ```
@@ -876,7 +876,7 @@ cout << (x & -x);
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -910,7 +910,7 @@ int main()
 
 #### 模板
 
-```c++
+```cpp
 vector<int> alls; // 存储所有待离散化的值
 sort(alls.begin(), alls.end()); // 将所有值排序
 alls.erase(unique(alls.begin(), alls.end()), alls.end());   // 去掉重复元素
@@ -954,7 +954,7 @@ int find(int x) // 找到第一个大于等于x的位置
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1035,7 +1035,7 @@ int main()
 
 3. 实现unique函数
 
-   ```c++
+   ```cpp
    vector<int>::iterator unique(vector<int> &a)
    {
      for(int i = 0;i < a.size(); i++){
@@ -1060,7 +1060,7 @@ int main()
 
 #### 模板
 
-```c++
+```cpp
 // 将所有存在交集的区间合并
 void merge(vector<PII> &segs)
 {
@@ -1107,7 +1107,7 @@ Eg. [1,3] & [2,6]  -> [1,6]
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1199,7 +1199,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1288,7 +1288,7 @@ int main()
 
 #### 双链表
 
-```c++
+```cpp
 // e[]表示节点的值，l[]表示节点的左指针，r[]表示节点的右指针，idx表示当前用到了哪个节点
 int e[N], l[N], r[N], idx;
 
@@ -1353,7 +1353,7 @@ void remove(int a)
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1459,7 +1459,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1535,7 +1535,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1626,7 +1626,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -1714,7 +1714,7 @@ int main()
 
 **code**
 
-```c++
+```cpp
 #include <iostream>
 #include <cstdio>
 
