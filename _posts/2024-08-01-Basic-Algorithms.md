@@ -6,6 +6,8 @@ date: 2024-08-01 11:12:30 -0800
 tags: CS-Learning
 ---
 # Basic Algorithms
+[toc]
+
 ## Chapter1 基础算法
 
 ### 快速排序 Quick Sort
