@@ -10,13 +10,13 @@ tags: CS-Learning
 
 
 
-# Chapter1 基础算法
+## Chapter1 基础算法
 
-## 快速排序 Quick Sort
+### 快速排序 Quick Sort
 
-### 785.快速排序
+#### 785.快速排序
 
-```cpp
+```c++
 #include <iostream>
 using namespace std;
 
@@ -66,9 +66,9 @@ quick_sort(q,j+1,r);**//此时x不能取q[r]**
 quick_sort(q,l,i-1);
 quick_sort(q,i,r);**//此时x不能取q[l]**
 
-## 归并排序
+### 归并排序
 
-```cpp
+```c++
 #include<iostream>
 using namespace std;
 
@@ -108,11 +108,11 @@ int main()
 
 
 
-## 二分排序
+### 二分排序
 
-### 整数二分
+#### 整数二分
 
-```cpp
+```c++
 bool check(int x) {/* ... */} // 检查x是否满足某种性质
 
 // 区间[l, r]被划分成[l, mid]和[mid + 1, r]时使用：
@@ -139,7 +139,7 @@ int bsearch_2(int l, int r)
 }
 ```
 
-#### 例题：
+##### 例题：
 
 给定一个按照升序排列的长度为 n 的整数数组，以及 q 个查询。
 
@@ -189,7 +189,7 @@ int bsearch_2(int l, int r)
 
 **答案**
 
-```cpp
+```c++
 #include <iostream>
 using namespace std;
 
@@ -226,11 +226,11 @@ int main()
 }
 ```
 
-### 浮点数二分
+#### 浮点数二分
 
 不考虑边界问题更简单
 
-#### 例题：
+##### 例题：
 
 给定一个浮点数 n，求它的三次方根。
 
@@ -261,7 +261,7 @@ int main()
 
 答案：
 
-```cpp
+```c++
 #include <iostream>
 #include <algorithm>
 
@@ -292,11 +292,11 @@ int main()
 }
 ```
 
-## 高精度算法
+### 高精度算法
 
-### 高精度加法
+#### 高精度加法
 
-```cpp
+```c++
 #include <iostream>
 #include <vector>
 
@@ -340,9 +340,9 @@ int main()
 }
 ```
 
-### 高精度减法
+#### 高精度减法
 
-```cpp
+```c++
 #include <iostream>
 #include <vector>
 
@@ -407,9 +407,9 @@ int main()
 }
 ```
 
-### 高精度乘法
+#### 高精度乘法
 
-```cpp
+```c++
 #include <iostream>
 #include <vector>
 
@@ -451,9 +451,9 @@ int main()
 }
 ```
 
-### 高精度除法
+#### 高精度除法
 
-```cpp
+```c++
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -500,14 +500,14 @@ int main()
 
 
 
-## 前缀和
+### 前缀和
 
-### 一维前缀和
+#### 一维前缀和
 
 - 更新 `S[i] = S[i-1] + a[i]`
 - 计算a[l,r] `ans = S[r] - S[l-1]`
 
-```cpp
+```c++
 #include <iostream>
 using namespace std;
 
@@ -536,12 +536,12 @@ int main()
 }
 ```
 
-### 二维前缀和(子矩阵的和)
+#### 二维前缀和(子矩阵的和)
 
 - 更新 `S[i][j] =a[i][j] + S[i][j-1] + S[i-1][j] - S[i-1][j-1]`
 - 计算(x1,y1)(x2,y2) `ans = S[x2][y2] - S[x1-1][y2] - S[x2][y1-1] + S[x1-1][y1-1]`
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -577,7 +577,7 @@ int main()
 
 ```
 
-### 一维差分
+#### 一维差分
 
 - 输入一个长度为 n 的整数序列。
 
@@ -594,7 +594,7 @@ int main()
   - `b[l] += c;`
   - ``b[r+1] -= c;`
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -643,7 +643,7 @@ int main()
 }
 ```
 
-### 二维差分
+#### 二维差分
 
 - 输入一个 n 行 m列的整数矩阵，再输入 q 个操作，每个操作包含五个整数 x1,y1,x2,y2,c
   其中 (x1,y1)和 (x2,y2)表示一个子矩阵的左上角坐标和右下角坐标。
@@ -659,7 +659,7 @@ int main()
   - `b[x1][y2+1] -= c`
   - `b[x2+1][y2+1] += c`
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -715,11 +715,11 @@ int main()
 
 ```
 
-## 双指针算法
+### 双指针算法
 
 - 基本模版
 
-  ```cpp
+  ```c++
   for(i = 0,j = 0;i < n;i++){
   	while(j<i && check(i,j))
       j++;
@@ -732,7 +732,7 @@ int main()
 
   将O(n^2^)算法优化到O(n)
 
-### 799.最长连续不重复子序列
+#### 799.最长连续不重复子序列
 
 给定一个长度为 n 的整数序列，请找出最长的不包含重复的数的连续区间，输出它的长度。
 
@@ -751,7 +751,7 @@ int main()
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -786,7 +786,7 @@ int main()
 
 ---
 
-### 800.数组元素的目标和
+#### 800.数组元素的目标和
 
 给定两个==升序排序==的有序数组 A 和 B，以及一个目标值 x。
 数组下标从 0 开始。
@@ -809,7 +809,7 @@ int main()
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -845,11 +845,11 @@ int main()
 
 ---
 
-## 位运算 
+### 位运算 
 
 **n的二进制表示中的第k位是几？**
 
-```cpp
+```c++
 int n = 10;
 for(int k = 3;k >= 0;k--){
   cout << (n>>k & 1);
@@ -867,18 +867,18 @@ x                 = 1010........==1==000......0
 ~x + 1         = 0101........==1==000......0
 x & (~x + 1) = 0000........==1==000......0
 
-```cpp
+```c++
 int x;
 cout << (x & -x);
 ```
 
-### 801.二进制中1的个数
+#### 801.二进制中1的个数
 
 给定一个长度为 n 的数列，请你求出数列中每个数的二进制表示中 1 的个数。
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -908,11 +908,11 @@ int main()
 }
 ```
 
-## (整数)离散化
+### (整数)离散化
 
-### 模板
+#### 模板
 
-```cpp
+```c++
 vector<int> alls; // 存储所有待离散化的值
 sort(alls.begin(), alls.end()); // 将所有值排序
 alls.erase(unique(alls.begin(), alls.end()), alls.end());   // 去掉重复元素
@@ -931,7 +931,7 @@ int find(int x) // 找到第一个大于等于x的位置
 }
 ```
 
-### 802.区间和 难☹️
+#### 802.区间和 难☹️
 
 假定有一个无限长的数轴，数轴上每个坐标上的数都是 0
 现在，我们首先进行 n 次操作，每次操作将某一位置 x 上的数加 c
@@ -956,7 +956,7 @@ int find(int x) // 找到第一个大于等于x的位置
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1037,7 +1037,7 @@ int main()
 
 3. 实现unique函数
 
-   ```cpp
+   ```c++
    vector<int>::iterator unique(vector<int> &a)
    {
      for(int i = 0;i < a.size(); i++){
@@ -1055,14 +1055,14 @@ int main()
 
    
 
-## 区间合并
+### 区间合并
 
 1. 按区间左端点排序
 2. 扫描整个区间，把所有可能有交集的区间进行合并
 
-### 模板
+#### 模板
 
-```cpp
+```c++
 // 将所有存在交集的区间合并
 void merge(vector<PII> &segs)
 {
@@ -1085,7 +1085,7 @@ void merge(vector<PII> &segs)
 }
 ```
 
-### 803. 区间合并
+#### 803. 区间合并
 
 给定 n 个区间 \[l~i~,r~i~\]，要求合并所有有交集的区间。
 注意如果在端点处相交，也算有交集。
@@ -1109,7 +1109,7 @@ Eg. [1,3] & [2,6]  -> [1,6]
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1165,15 +1165,15 @@ int main()
 
 
 
-# Chapter2 数据结构
+## Chapter2 数据结构
 
-## 链表
+### 链表
 
 > 笔试中一般不采用动态链表
 
-### 单链表
+#### 单链表
 
-#### 826. 单链表
+##### 826. 单链表
 
 实现一个单链表，链表初始为空，支持三种操作：
 
@@ -1201,7 +1201,7 @@ int main()
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1288,9 +1288,9 @@ int main()
 
 ---
 
-### 双链表
+#### 双链表
 
-```cpp
+```c++
 // e[]表示节点的值，l[]表示节点的左指针，r[]表示节点的右指针，idx表示当前用到了哪个节点
 int e[N], l[N], r[N], idx;
 
@@ -1318,7 +1318,7 @@ void remove(int a)
 }
 ```
 
-#### 827. 双链表
+##### 827. 双链表
 
 实现一个双链表，双链表初始为空，支持 55 种操作：
 
@@ -1355,7 +1355,7 @@ void remove(int a)
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1457,11 +1457,11 @@ int main()
 
 
 
-### 栈
+#### 栈
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1531,13 +1531,13 @@ int main()
 
 ```
 
-### 队列
+#### 队列
 
 队尾插入，队头推出
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -1600,9 +1600,9 @@ int main()
 
 
 
-### 单调栈
+#### 单调栈
 
-#### 830. 单调栈
+##### 830. 单调栈
 
 给定一个长度为 N 的整数数列，输出每个数左边第一个比它小的数，如果不存在则输出 −1。
 
@@ -1628,7 +1628,7 @@ int main()
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 
 using namespace std;
@@ -1659,9 +1659,9 @@ int main()
 
 
 
-### 单调队列
+#### 单调队列
 
-#### 154. 滑动窗口——难
+##### 154. 滑动窗口——难
 
 给定一个大小为 n≤10^6^ 的数组。
 
@@ -1716,7 +1716,7 @@ int main()
 
 **code**
 
-```cpp
+```c++
 #include <iostream>
 #include <cstdio>
 
@@ -1790,5 +1790,4 @@ int main()
 
 [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 
-### KMP算法
-
+##### KMP算法
