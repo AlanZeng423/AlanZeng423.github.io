@@ -1,11 +1,11 @@
 title: "Alan's Blog"
 author: "Alan Zeng"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Here is Alan's site. Welcome!" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "alanzeng@alanzeng.com"
-# twitter_username: "Alan92423"
+twitter_username: "Alan92423"
 github_username: "AlanZeng423"
 #linkedin_username: "AlanZeng423"
 #facebook_username: username
@@ -22,9 +22,14 @@ theme: "minima"
 
 rss: rss
 
+# kramdown:
+#   syntax_highlighter_opts:
+#     disable: false
+
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  syntax_highlighter_opts:
-    disable: false
+  syntax_highlighter: rouge
     
 plugins:
   - jekyll-feed
