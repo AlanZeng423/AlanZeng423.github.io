@@ -6,7 +6,7 @@ description: RAG
 date: 2024-07-24
 tags: Development
 ---
-
+# Jekyll 网站添加访问量统计分析
 ## Google Analysis
 
 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到 Jekyll 网站十分简单。登录  [谷歌分析](https://www.google.com/intl/zh-CN/analytics/)  并新建一个媒体资源，以获取网站的跟踪 ID。可在`管理 > 媒体资源 > 跟踪信息 > 跟踪代码`下找到跟踪 ID。
