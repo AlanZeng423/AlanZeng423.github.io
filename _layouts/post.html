@@ -21,6 +21,10 @@ layout: default
     {% include sharelinks.html %}
   </div>
 
+  <div>
+    page view:&nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>times.
+  </div>
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     {% include navlinks.html %}
