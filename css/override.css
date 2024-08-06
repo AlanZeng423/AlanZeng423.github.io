@@ -90,7 +90,7 @@ hr {
 .highlight pre {
   /* Avoid pushing up the copy buttons. */
   margin: 0;
-  background-color:#f8f8f8
+/*   background-color:#f8f8f8 */
 }
 
 @media print {
