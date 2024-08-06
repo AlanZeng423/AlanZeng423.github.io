@@ -27,11 +27,9 @@ layout: default
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  <script src="https://utteranc.es/client.js"
-        repo="alanzeng423/comments"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-  </script>
+  
+  {% if site.comments_repo %}
+    {% include comments.html %}
+  {% endif %}
+  
 </article>
