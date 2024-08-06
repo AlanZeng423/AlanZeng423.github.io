@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stared Sites
+title: Bookmarks
 description: 
 date: 2024-07-01
 tags: Development
