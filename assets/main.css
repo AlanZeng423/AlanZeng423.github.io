@@ -90,7 +90,7 @@ pre, code {
     font-size: 15px;
     border: 1px solid #e8e8e8;
     border-radius: 3px;
-    background-color:#eef
+    background-color:#f8f8f8
 }
 
 code {
@@ -418,7 +418,7 @@ table td {
 }
 
 .highlighter-rouge .highlight {
-    background:#fff
+    background:rgb(255, 255, 255)
 }
 
 .highlight .c {
