@@ -34,8 +34,9 @@ kramdown:
 
 header_pages:
   - resume.html
-  - archive.html
+  - archive.md
   - bookmarks.md
+  - index.md
 
 comments_repo: alanzeng423/alanzeng423.github.io
 
