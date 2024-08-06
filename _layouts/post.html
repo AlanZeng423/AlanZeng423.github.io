@@ -19,11 +19,10 @@ layout: default
 
   <div class="share-links">
     {% include sharelinks.html %}
-  </div>
-
-  <div>
+    <br>
     page view:&nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>times.
   </div>
+
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
