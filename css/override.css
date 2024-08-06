@@ -87,9 +87,16 @@ hr {
   background-color: #D9D9D9;
 }
 
+/* OVERRIDE MAIN.CSS */
+
+.highlighter-rouge .highlight {
+    background: #f8f8f8
+}
 pre {
     background-color:#f8f8f8
 }
+
+/* END OVERRIDE */
 
 .highlight pre {
   /* Avoid pushing up the copy buttons. */
