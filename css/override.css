@@ -87,10 +87,7 @@ hr {
   background-color: #D9D9D9;
 }
 
-pre, code {
-    font-size: 15px;
-    border: 1px solid #e8e8e8;
-    border-radius: 3px;
+pre {
     background-color:#f8f8f8
 }
 
