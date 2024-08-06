@@ -67,4 +67,9 @@ Utterances 有多种主题，其中包括多款夜间模式主题。
         async>
 </script>
 ```
-将这部分代码粘贴进`_layout/post.html`中, 大功告成!
+**将这部分代码粘贴进`_layout/post.html`中, 大功告成!**
+
+
+> referenced:
+> - [link](https://gabrielstaples.com/github-pages-comments/#gsc.tab=0)
+> - [link](https://blog.njilc.com/post/self-hosted-utterances-tutorial)
