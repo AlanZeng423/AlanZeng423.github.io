@@ -32,6 +32,9 @@ kramdown:
 # kramdown:
 #   syntax_highlighter: rouge
 
+# Google Analytics
+google_analytics: G-5721WYPZLT
+
 header_pages:
   - resume.html
   - archive.md
