@@ -89,10 +89,10 @@ hr {
 
 /* OVERRIDE MAIN.CSS */
 
-.highlighter-rouge .highlight {
+/* .highlighter-rouge .highlight {
     background: #f8f8f8
-}
-pre {
+} */
+pre, code {
     background-color:#f8f8f8
 }
 
