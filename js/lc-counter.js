@@ -2,7 +2,7 @@
 <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
 <script>
     // 第一个参数是appid，第二个参数是appkey，此处的只是示例
-    AV.initialize("gQJjjB93fxTAN0W6cmFdlOrW-gzGzoHsz", "IcwsNtdTDwM9gdkJfLNJKcck");
+    AV.initialize("ERu64G9XtUiXNyfixnCBQaMk-gzGzoHsz", "aGwcUQf6sAyMYGjGthirMbLa");
     // 自己创建的Class的名字
     var name='Counter';
     function createRecord(Counter){
