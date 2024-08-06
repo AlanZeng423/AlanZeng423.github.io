@@ -1,5 +1,6 @@
 title: "Alan's Site"
 author: "Alan Zeng"
+url: https://alanzeng.com
 description: "Here is Alan's site. Welcome!" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
@@ -22,15 +23,22 @@ theme: "minima"
 
 rss: rss
 
-# kramdown:
-#   syntax_highlighter_opts:
-#     disable: true
-
-markdown: kramdown
-highlighter: rouge
 kramdown:
-  syntax_highlighter: rouge
-    
+  syntax_highlighter_opts:
+    disable: true
+
+# markdown: kramdown
+# highlighter: rouge
+# kramdown:
+#   syntax_highlighter: rouge
+
+header_pages:
+  - resume.html
+  - archive.html
+  - bookmarks.md
+
+comments_repo: alanzeng423/alanzeng423.github.io
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
